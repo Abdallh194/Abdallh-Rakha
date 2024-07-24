@@ -1,0 +1,48 @@
+.RecentWork {
+  margin-top: 100px;
+  .container {
+    max-width: 83%;
+  }
+  .top {
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.725);
+  }
+  .head {
+    margin: 5px auto;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    span {
+      background: linear-gradient(45deg, $blue-color, $purple-color);
+      padding: 4px;
+    }
+  }
+  .top,
+  .head {
+    text-align: center;
+  }
+  .row {
+    margin-top: 30px;
+  }
+  .custom_Card_Width {
+    width: 100% !important;
+  }
+  .WorkCard {
+    margin: 7px auto;
+  }
+  @media (max-width: 767px) {
+    margin-top: 50px;
+    .container {
+      max-width: 97%;
+    }
+    .row {
+      margin-top: 7px;
+    }
+    .top {
+      font-size: 17px;
+    }
+    .head {
+      font-size: 21px;
+    }
+  }
+}

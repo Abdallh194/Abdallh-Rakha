@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// bootstrab file
+@import "bootstrap/dist/css/bootstrap.css";
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Danfo:ELSH@0..100&display=swap"); //logo font
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"); // header font
+
+// vars
+$header-font: "Syne", sans-serif;
+$logo-font: "Danfo", serif;
+$main-font: "Montserrat";
+$dark-color: #100817;
+$gray-color: #3f3945;
+$purple-color: #d401f0;
+$blue-color: #5600f7;
+
+//global html body
+body,
+html {
+  font-family: $main-font !important;
+  background-color: $dark-color !important;
+  font-family: 400;
+  overflow-x: hidden;
+}
+.MuiAvatar-root {
+  width: 60px;
+  height: 60px;
+}
+.CopyRight {
+  padding: 10px 0;
+  background-color: white;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    display: block !important;
+    text-align: center;
+    line-height: 2;
+  }
+}
+@media (max-width: 1200px) {
+  .MuiAvatar-root {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@import "../Styles/HomePage";
+@import "../Styles/ResponsiveAppBar";
+@import "../Styles/Drawer";
+@import "../Styles/RecentWork";
+@import "../Styles/AboutMe";
+@import "../Styles/Skills";

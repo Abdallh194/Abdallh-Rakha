@@ -1,0 +1,30 @@
+.Drawer {
+  border-right: 2px solid #810092 !important;
+  height: 100vh !important;
+  background: $gray-color !important;
+  color: white;
+  .logo {
+    margin-top: 90px;
+    text-align: center;
+
+    .name {
+      font-size: 23px;
+      font-size: 25px;
+      margin-top: -10px;
+      font-family: $header-font;
+    }
+  }
+  .info {
+    text-align: center;
+  }
+  .Link {
+    display: block;
+    color: white;
+    text-decoration: none !important;
+    margin-left: 9px;
+    margin-top: 20px;
+  }
+  .active {
+    margin-top: 45px;
+  }
+}

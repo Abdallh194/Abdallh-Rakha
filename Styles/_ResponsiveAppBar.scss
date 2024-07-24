@@ -1,0 +1,97 @@
+.ResponsiveAppBar {
+  color: white;
+  background-color: #3f3945f7;
+  position: relative;
+  z-index: 1;
+  max-width: 84%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 2px solid #5b5b5b;
+  .logo {
+    font-family: $header-font;
+    font-size: 27px;
+    span {
+      color: $purple-color;
+    }
+  }
+  .logo-MobileView {
+    font-size: 18px;
+  }
+  .menu {
+    margin-left: -10px;
+    justify-content: center;
+
+    .Link {
+      margin-right: 51px;
+      text-decoration: none !important;
+      color: white;
+      font-size: 18px;
+    }
+    .active {
+      position: relative;
+      display: inline-block;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 145%;
+        transition: 0.3s;
+        top: -5px;
+      }
+      &::before {
+        border-left: 2px solid $purple-color;
+        border-bottom: 2px solid $purple-color;
+        left: -12px;
+      }
+      &::after {
+        border-right: 2px solid $purple-color;
+        border-top: 2px solid $purple-color;
+        right: -12px;
+        top: -6px;
+      }
+      &:hover {
+        &::after,
+        &::before {
+          width: 143%;
+        }
+      }
+    }
+  }
+  .hire {
+    background: linear-gradient(45deg, $blue-color, $purple-color);
+    font-size: 22px;
+    padding: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  @media (max-width: 1300px) {
+    max-width: 100%;
+  }
+  @media (max-width: 992px) {
+    .menu {
+      margin-left: 0;
+      .Link {
+        font-size: 15px;
+        margin-right: 35px;
+      }
+    }
+    .logo {
+      font-size: 24px;
+    }
+    .hire {
+      font-size: 13px;
+      padding: 13px;
+    }
+  }
+  @media (max-width: 900px) {
+    padding: 10px 0;
+    width: 92%;
+    margin-top: 20px;
+    .logo {
+      display: none;
+    }
+  }
+}
