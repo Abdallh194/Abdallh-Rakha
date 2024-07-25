@@ -30,32 +30,21 @@ html {
   width: 60px;
   height: 60px;
 }
-.CopyRight {
-  padding: 10px 0;
-  background-color: white;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    display: block !important;
-    text-align: center;
-    line-height: 2;
-  }
-}
+
 @media (max-width: 1200px) {
   .MuiAvatar-root {
     width: 45px;
     height: 45px;
   }
 }
-
+.ClientSay {
+  border: 1px solid #494949;
+}
 @import "../Styles/HomePage";
 @import "../Styles/ResponsiveAppBar";
 @import "../Styles/Drawer";
 @import "../Styles/RecentWork";
 @import "../Styles/AboutMe";
 @import "../Styles/Skills";
+@import "../Styles/ClientSays";
+@import "../Styles/footer";

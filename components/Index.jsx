@@ -1,14 +1,21 @@
 "use client";
 import React from "react";
 import HomePage from "./HomePage";
-import RecentWork from "./RecentWork";
 import { ThreeDCardDemo } from "./ThreeDCardDemo";
+import { VortexDemo } from "./VortexDemo";
+import Skills from "./Skills";
+import ClientSays from "./ClientSays";
+import { GridBackgroundDemo } from "./GridBackgroundDemo";
+
 const Index = () => {
   return (
     <>
       <HomePage />
-      {/* <RecentWork /> */}
       <ThreeDCardDemo />
+      <VortexDemo />
+      <Skills />
+      <ClientSays />
+      <GridBackgroundDemo />
     </>
   );
 };

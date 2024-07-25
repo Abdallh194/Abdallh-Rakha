@@ -1,5 +1,5 @@
 .AboutMe {
-  margin-top: 120px;
+  padding: 80px 0;
   color: white;
   position: relative;
   .bg-line {
@@ -32,7 +32,7 @@
   }
 
   .Info-Card {
-    background-color: #3f3945;
+    background-color: #3f3945de;
     position: relative;
     margin-top: 40px;
     z-index: 2;
@@ -74,13 +74,16 @@
     }
   }
   @media (max-width: 767px) {
-    margin-top: 60px;
+    margin-top: 0;
     .Info-Card {
       width: 95%;
       margin-top: 0px;
     }
     .loremCard {
       display: none !important;
+    }
+    .head {
+      line-height: 1.5;
     }
   }
 }

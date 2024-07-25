@@ -18,32 +18,21 @@ html {
   height: 60px;
 }
 
-.CopyRight {
-  padding: 10px 0;
-  background-color: white;
-}
-.CopyRight .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-@media (max-width: 767px) {
-  .container {
-    display: block !important;
-    text-align: center;
-    line-height: 2;
-  }
-}
 @media (max-width: 1200px) {
   .MuiAvatar-root {
     width: 45px;
     height: 45px;
   }
 }
+.ClientSay {
+  border: 1px solid #494949;
+}
+
 .HomePage {
   color: white;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 .HomePage .helloWprd {
   color: transparent;
@@ -545,7 +534,7 @@ html {
 }
 
 .AboutMe {
-  margin-top: 120px;
+  padding: 80px 0;
   color: white;
   position: relative;
 }
@@ -578,7 +567,7 @@ html {
   transform: rotate(13deg);
 }
 .AboutMe .Info-Card {
-  background-color: #3f3945;
+  background-color: rgba(63, 57, 69, 0.8705882353);
   position: relative;
   margin-top: 40px;
   z-index: 2;
@@ -622,7 +611,7 @@ html {
 }
 @media (max-width: 767px) {
   .AboutMe {
-    margin-top: 60px;
+    margin-top: 0;
   }
   .AboutMe .Info-Card {
     width: 95%;
@@ -630,6 +619,9 @@ html {
   }
   .AboutMe .loremCard {
     display: none !important;
+  }
+  .AboutMe .head {
+    line-height: 1.5;
   }
 }
 
@@ -650,7 +642,7 @@ html {
 }
 .Skills .skills-Details .progress-container {
   background-color: white;
-  height: 5px;
+  height: 4px;
   width: 100%;
 }
 .Skills .skills-Details .progress-width {
@@ -687,10 +679,9 @@ html {
 .Skills .Image-Card {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-.Skills .Image-Card .img-fluid {
-  width: 100%;
+.Skills .Image-Card .animationlaptop {
+  width: 150%;
 }
 @media (max-width: 767px) {
   .Skills {
@@ -701,5 +692,88 @@ html {
   }
   .Skills .Image-Card {
     margin: 45px 0px;
+  }
+  .Skills .Image-Card .animationlaptop {
+    width: 100%;
+  }
+}
+
+.ClientSays {
+  z-index: 100;
+  background-color: black;
+}
+.ClientSays .head {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+.ClientSays .head span {
+  background: linear-gradient(45deg, #5600f7, #d401f0);
+  padding: 4px;
+}
+
+.footer {
+  padding: 0;
+  padding-bottom: 20px;
+}
+.footer .content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.footer .head {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  margin-top: 160px;
+  width: 46%;
+}
+.footer .head span {
+  background: linear-gradient(45deg, #5600f7, #d401f0);
+  padding: 4px;
+}
+.footer .info {
+  color: rgba(255, 255, 255, 0.534);
+  text-align: center;
+  margin-top: 35px;
+}
+.footer .work {
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  margin-top: 60px;
+  height: 60px;
+  border-radius: 8px;
+  text-decoration: none !important;
+}
+.footer .work .span2 {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.footer .copy {
+  display: flex;
+  max-width: 70%;
+  display: flex;
+  color: white;
+  margin: auto auto;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .footer .head {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .footer .head {
+    margin-top: 81px;
+    font-size: 34px;
+  }
+  .footer .head span {
+    display: block;
   }
 }/*# sourceMappingURL=globals.css.map */

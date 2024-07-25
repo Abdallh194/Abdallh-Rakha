@@ -5,6 +5,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaEye } from "react-icons/fa";
+import { motion } from "framer-motion";
 export function ThreeDCardDemo() {
   const images = [
     {
@@ -88,60 +89,69 @@ export function ThreeDCardDemo() {
         <Row>
           {images.map((e) => {
             return (
-              <Col md={e.md} lg={e.lg} key={e.alt} className="WorkCard">
+              <Col md={e.md} key={e.alt} lg={e.lg} className="WorkCard">
                 <CardContainer className="inter-var">
-                  <CardBody className=" custom_Card_Width bg-gray-50 relative   dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-current  border-black/[0.1] w-3/6 sm:w-[30rem] h-auto rounded-xl p-6   ">
-                    <CardItem
-                      translateZ="50"
-                      className="text-xl font-bold text-neutral-600 dark:text-white"
-                    >
-                      {e.alt}
-                    </CardItem>
-                    <CardItem
-                      as="p"
-                      translateZ="60"
-                      className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                    >
-                      {e.desc}
-                    </CardItem>
-                    <CardItem
-                      translateZ="100"
-                      rotateX={20}
-                      rotateZ={-10}
-                      className="w-full mt-4"
-                    >
-                      <Image
-                        src={e.src}
-                        height="1100"
-                        width="1200"
-                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl img-fluid"
-                        alt="thumbnail"
-                      />
-                    </CardItem>
-                    <div className="flex justify-between items-center mt-20">
+                  <motion.div
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                  >
+                    <CardBody className=" custom_Card_Width bg-gray-50 relative   dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-current  border-black/[0.1] w-3/6 sm:w-[30rem] h-auto rounded-xl p-6   ">
                       <CardItem
-                        translateZ={20}
-                        translateX={-40}
-                        as="button"
-                        className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white text-decoration-none"
+                        translateZ="50"
+                        className="text-xl font-bold text-neutral-600 dark:text-white"
                       >
-                        Try now →
+                        {e.alt}
                       </CardItem>
                       <CardItem
-                        as="a"
-                        href={e.url}
-                        translateZ={20}
-                        translateX={40}
-                        target="_blank"
-                        className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                        as="p"
+                        translateZ="60"
+                        className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                       >
-                        Live Demo{" "}
-                        <FaEye
-                          style={{ display: "inline-block", marginLeft: "5px" }}
+                        {e.desc}
+                      </CardItem>
+                      <CardItem
+                        translateZ="100"
+                        rotateX={20}
+                        rotateZ={-10}
+                        className="w-full mt-4"
+                      >
+                        <Image
+                          src={e.src}
+                          height="1100"
+                          width="1200"
+                          className=" w-full object-cover rounded-xl group-hover/card:shadow-xl  "
+                          alt="thumbnail"
                         />
                       </CardItem>
-                    </div>
-                  </CardBody>
+                      <div className="flex justify-between items-center mt-20">
+                        <CardItem
+                          translateZ={20}
+                          translateX={-40}
+                          as="button"
+                          className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white text-decoration-none"
+                        >
+                          Try now →
+                        </CardItem>
+                        <CardItem
+                          as="a"
+                          href={e.url}
+                          translateZ={20}
+                          translateX={40}
+                          target="_blank"
+                          className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                        >
+                          Live Demo{" "}
+                          <FaEye
+                            style={{
+                              display: "inline-block",
+                              marginLeft: "5px",
+                            }}
+                          />
+                        </CardItem>
+                      </div>
+                    </CardBody>
+                  </motion.div>
                 </CardContainer>
               </Col>
             );

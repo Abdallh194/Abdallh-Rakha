@@ -1,6 +1,8 @@
 .HomePage {
   color: white;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
   .helloWprd {
     color: transparent;
     -webkit-text-stroke: 4px #77727c;

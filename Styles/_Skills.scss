@@ -13,7 +13,7 @@
     margin-top: 19px;
     .progress-container {
       background-color: white;
-      height: 5px;
+      height: 4px;
       width: 100%;
     }
     .progress-width {
@@ -54,9 +54,8 @@
   .Image-Card {
     display: flex;
     align-items: center;
-    justify-content: center;
-    .img-fluid {
-      width: 100%;
+    .animationlaptop {
+      width: 150%;
     }
   }
   @media (max-width: 767px) {
@@ -66,6 +65,9 @@
     }
     .Image-Card {
       margin: 45px 0px;
+      .animationlaptop {
+        width: 100%;
+      }
     }
   }
 }
