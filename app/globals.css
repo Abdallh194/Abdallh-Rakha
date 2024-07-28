@@ -460,7 +460,6 @@ html {
 }
 .Drawer .logo {
   margin-top: 90px;
-  text-align: center;
 }
 .Drawer .logo .name {
   font-size: 23px;
@@ -468,15 +467,13 @@ html {
   margin-top: -10px;
   font-family: "Syne", sans-serif;
 }
-.Drawer .info {
-  text-align: center;
-}
 .Drawer .Link {
   display: block;
   color: white;
   text-decoration: none !important;
   margin-left: 9px;
-  margin-top: 20px;
+  margin-top: 25px;
+  font-size: 19px;
 }
 .Drawer .active {
   margin-top: 45px;

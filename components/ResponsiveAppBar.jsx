@@ -25,9 +25,6 @@ function ResponsiveAppBar() {
           <Box sx={{ display: { md: "contents", xs: "none" } }}>
             <motion.img
               src="/logo.png"
-              initial={{ x: -20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.3, duration: 1.3 }}
               alt="logo"
               width={80}
               height={50}

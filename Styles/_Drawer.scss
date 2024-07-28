@@ -5,7 +5,6 @@
   color: white;
   .logo {
     margin-top: 90px;
-    text-align: center;
 
     .name {
       font-size: 23px;
@@ -14,15 +13,14 @@
       font-family: $header-font;
     }
   }
-  .info {
-    text-align: center;
-  }
+
   .Link {
     display: block;
     color: white;
     text-decoration: none !important;
     margin-left: 9px;
-    margin-top: 20px;
+    margin-top: 25px;
+    font-size: 19px;
   }
   .active {
     margin-top: 45px;

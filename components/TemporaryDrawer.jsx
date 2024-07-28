@@ -31,12 +31,12 @@ export default function TemporaryDrawer({}) {
           height={50}
           className="img-fluid"
         />
-        <div className="name"> A.S.R</div>
+        <div className="name mt-1"> Abdallh Sabry Rakha</div>
       </div>
-      <div className="info">
+      <div className="info mt-2">
         I work as a web designer or Professional front-end developer
       </div>
-      <Divider />
+      <hr />
       <Link
         className="Link active"
         href="/"
