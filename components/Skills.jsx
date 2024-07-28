@@ -77,6 +77,7 @@ const Skills = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
       className="Skills"
+      id="Skills"
     >
       <Container>
         <Row>
@@ -92,7 +93,7 @@ const Skills = () => {
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: skills.Degree }}
-                    transition={{ duration: 2.3 }}
+                    transition={{ duration: 1.3 }}
                     className="progress-width"
                     data-degree={skills.Degree}
                   ></motion.div>

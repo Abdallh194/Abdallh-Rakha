@@ -10,7 +10,7 @@ import MenuItem from "@mui/material/MenuItem";
 import TemporaryDrawer from "./TemporaryDrawer";
 import Link from "next/link";
 
-const pages = ["Home", "About Me", "Resume", "Contact", "Blog"];
+const pages = ["Home", "Blog", "About Me", "Resume", "Contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -125,31 +125,31 @@ function ResponsiveAppBar() {
             </Link>
             <Link
               className="Link"
-              href="/"
+              href="#RecentWork"
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Blog
+            </Link>
+            <Link
+              className="Link"
+              href="#AboutMe"
               sx={{ my: 2, color: "white", display: "block" }}
             >
               About Me
             </Link>
             <Link
               className="Link"
-              href="/"
+              href="#Skills"
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              Resume
+              Skills
             </Link>
             <Link
               className="Link"
-              href="/"
+              href="#Contact"
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Contact
-            </Link>
-            <Link
-              className="Link"
-              href="/"
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              Blog
             </Link>
           </Box>
 

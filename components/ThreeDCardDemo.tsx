@@ -113,7 +113,7 @@ export function ThreeDCardDemo() {
                       <CardItem
                         translateZ="100"
                         rotateX={20}
-                        rotateZ={-10}
+                        rotateZ={-19}
                         className="w-full mt-4"
                       >
                         <Image

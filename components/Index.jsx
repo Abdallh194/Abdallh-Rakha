@@ -2,7 +2,7 @@
 import React from "react";
 import HomePage from "./HomePage";
 import { ThreeDCardDemo } from "./ThreeDCardDemo";
-import { VortexDemo } from "./VortexDemo";
+import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import ClientSays from "./ClientSays";
 import { GridBackgroundDemo } from "./GridBackgroundDemo";
@@ -12,7 +12,7 @@ const Index = () => {
     <>
       <HomePage />
       <ThreeDCardDemo />
-      <VortexDemo />
+      <AboutMe />
       <Skills />
       <ClientSays />
       <GridBackgroundDemo />

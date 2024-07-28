@@ -359,7 +359,7 @@ html {
   color: white;
   background-color: rgba(63, 57, 69, 0.968627451);
   position: relative;
-  z-index: 1;
+  z-index: 5;
   max-width: 84%;
   margin: auto;
   margin-top: 30px;
@@ -569,7 +569,6 @@ html {
 .AboutMe .Info-Card {
   background-color: rgba(63, 57, 69, 0.8705882353);
   position: relative;
-  margin-top: 40px;
   z-index: 2;
   text-align: center;
   padding: 40px 20px;
@@ -579,6 +578,7 @@ html {
   border-radius: 10px;
   height: -moz-fit-content;
   height: fit-content;
+  margin-top: 80px;
 }
 .AboutMe .Info-Card .icon {
   width: 100px;
@@ -599,7 +599,7 @@ html {
   font-weight: 500;
 }
 .AboutMe .custom-Magin {
-  margin-top: 100px;
+  margin-top: 180px;
 }
 @media (max-width: 992px) {
   .AboutMe .container {

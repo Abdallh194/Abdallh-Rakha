@@ -34,7 +34,7 @@ const AboutMe = () => {
     },
   ];
   return (
-    <div className="AboutMe">
+    <div className="AboutMe" id="AboutMe">
       <Container>
         <Row>
           <Col md={12} lg={6} className="About-Card">
@@ -52,6 +52,7 @@ const AboutMe = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             consequuntur possimus, minima eum minus
           </Col>
+          <div className="bg-line"></div>
           {Cards.map((e) => {
             return (
               <motion.div
