@@ -33,8 +33,10 @@ const HomePage = () => {
               <div className="exp">
                 With 2+ Years Of Experience skilled Front-End Developer
               </div>
-              <div className="buttons d-flex  ">
-                <div className="cv">Show Resume</div>
+              <div className="buttons d-flex ">
+                <Link href="/Abdallh-Sabry-Rakha.pdf" className="cv">
+                  Show Resume
+                </Link>
 
                 <Link
                   href="#RecentWork"

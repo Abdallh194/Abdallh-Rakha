@@ -135,6 +135,8 @@ html {
   border-radius: 5px;
   margin-right: 20px;
   background: linear-gradient(45deg, #5600f7, #d401f0);
+  color: white !important;
+  text-decoration: none !important;
   text-align: center;
 }
 .HomePage .Info-Card .buttons .cv,
