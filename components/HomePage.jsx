@@ -34,7 +34,7 @@ const HomePage = () => {
                 With 2+ Years Of Experience skilled Front-End Developer
               </div>
               <div className="buttons d-flex ">
-                <Link href="/Abdallh-Sabry-Rakha.pdf" className="cv">
+                <Link href="/Abdallh-Sabry.pdf" className="cv">
                   Show Resume
                 </Link>
 
